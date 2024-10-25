@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    
+  }
+  
+  header .logo {
+    font-size: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-left: 30px;
+  }
+  
+  header nav ul li a, header nav ul li button {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  header nav ul li button:hover, header nav ul li a:hover {
+    color: #ddd;
+  }
+  

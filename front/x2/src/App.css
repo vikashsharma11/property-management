@@ -1,0 +1,66 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+main {
+  min-height: calc(100vh - 120px);  /* Adjusting for header and footer */
+  padding: 20px;
+}
+
+/* Links and Buttons */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Page-specific global styles */
+h1, h2, h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+button, a.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, a.button:hover {
+  background-color: #45a049;
+}

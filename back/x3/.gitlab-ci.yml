@@ -1,0 +1,43 @@
+# Define pipeline stages
+stages:
+  - install
+  - lint
+  - test
+  - deploy
+
+# Install Stage
+install:
+  stage: install
+  image: node:18  # Use a consistent Node.js version across all stages
+  script:
+    - npm ci  # Preferred for CI environments over npm install
+  artifacts:
+    paths:
+      - node_modules/
+
+# Linting Stage
+lint:
+  stage: lint
+  image: node:18
+  script:
+    - npm run lint
+
+# Testing Stage
+test:
+  stage: test
+  image: node:18
+  script:
+    - npm test -- --passWithNoTests  # Allows pipeline to continue if no tests are found
+  artifacts:
+    paths:
+      - coverage/  # Store test coverage reports if applicable
+
+# Deployment to Render
+deploy:
+  stage: deploy
+  image: curlimages/curl:7.68.0
+  script:
+    - 'curl -X POST -H "Authorization: Bearer $RENDER_API_KEY" https://api.render.com/v1/services/$SERVICE_ID/deploys'
+
+  only:
+    - main  # Only deploy on pushes to the main branch

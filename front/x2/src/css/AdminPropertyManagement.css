@@ -1,0 +1,60 @@
+.admin-property-management {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .admin-property-management h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-property-management form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  .admin-property-management input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .admin-property-management button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-property-management ul {
+    list-style-type: none;
+    padding: 0;
+
+  }
+  
+  .admin-property-management li {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    align-items: center;
+  }
+  
+  .admin-property-management button {
+    margin-top: 10px;
+    background-color: rgb(7, 94, 7);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-direction: row;
+    
+  }
+  

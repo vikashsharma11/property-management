@@ -1,0 +1,54 @@
+.admin-customer-management {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .admin-customer-management h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-customer-management form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  .admin-customer-management input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .admin-customer-management button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-customer-management ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-customer-management li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .admin-customer-management button {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
